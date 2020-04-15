@@ -1,0 +1,7 @@
+{
+  "name": "MBK.LeaseMD.Client",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

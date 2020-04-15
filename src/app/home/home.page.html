@@ -1,0 +1,31 @@
+<ion-header mode="md">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md"></ion-back-button>
+      <ion-menu-button mode="md"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/shapes.svg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Get Started</ion-card-subtitle>
+      <ion-card-title>Welcome to POC</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Data recovered:</p>
+      <p>{{dataRecovered | json}}</p>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-button (click)="openAppLauncher()">App Launcher POC 2</ion-button>
+  <ion-button (click)="openIntent()">Intent POC 2</ion-button>
+  <ion-button (click)="sendResult()">Send result to POC 2</ion-button>
+
+</ion-content>
